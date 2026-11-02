@@ -1,0 +1,333 @@
+:root {
+    --color-primary: #f1f1f1;
+    --color-secondary: #cbfe1c;
+    --color-trinary: #9198dc;
+    /* -color: #0b0e13;
+    #1e2939; */
+    --color-black: #000000;
+    --color-alpha-black: rgba(0, 0, 0, 0.9);
+    --color-white: #ffffff;
+    /* #d1d5dc; */
+    --color-footer: #99A1AF;
+
+}
+
+body {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+    font-family: "Days One", sans-serif;
+    color: var(--color-primary);
+}
+
+::selection {
+    background-color: var(--color-secondary) !important;
+    color: var(--color-black) !important;
+}
+
+/* .btn-primary {
+    --bs-btn-color: black;
+    --bs-btn-bg: var(--color-secondary);
+    --bs-btn-border-color: var(--color-secondary);
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: #0b5ed7;
+    --bs-btn-hover-border-color: #0a58ca;py-2
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0a58ca;
+    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0d6efd;
+    --bs-btn-disabled-border-color: #0d6efd;
+} */
+
+ul {
+    /* Clips the shine inside the button bounds */
+    list-style: none;
+    padding-left: 0;
+}
+4
+/* Navbar */
+
+#navbar .navbar-brand,
+#navbar .active,
+#footer .footer-logo {
+    color: var(--color-secondary);
+}
+
+#navbar .navbar-nav a:not(.active) {
+    color: var(--color-primary);
+}
+
+#navbar {
+    border-color: oklch(0.278 0.033 256.848) !important;
+    background-color: #0B0E13 !important;
+}
+
+
+/* Home */
+
+#home {
+    padding-top: 120px;
+    padding-bottom: 64px;
+    background-image: linear-gradient(var(--color-alpha-black), var(--color-alpha-black)), url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+#home .home-img {
+    background: linear-gradient(to right, var(--color-secondary) 0%, #66BB6A 100%);
+    width: 576px;
+    height: 392px;
+
+}
+
+#home .home-p {
+    max-width: 550px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #d1d5dc;
+}
+
+#home img {
+    border-radius: 16px !important;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 75px;
+}
+
+h1 span {
+    color: var(--color-secondary);
+}
+
+.my-badge {
+    border: 1px solid oklch(0.278 0.033 256.848) !important;
+    background-color: #0B0E13 !important;
+}
+
+.act-ply {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #99a1af;
+    margin: 0;
+}
+
+.act-ply-2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--color-primary);
+    margin: 0;
+}
+
+.trophy {
+    color: var(--color-secondary);
+}
+
+/* Contact */
+.laser {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 3.2px;
+    color: var(--color-secondary);
+    position: relative;
+    display: inline-block;
+}
+
+.laser::before {
+    content: "";
+    position: absolute;
+    width: 64px;
+    height: 2px;
+    background-color: var(--color-secondary);
+    top: 50%;
+    left: -80px;
+    background: linear-gradient(to right, transparent, currentColor);
+    transform: translateY(-50%);
+}
+
+.laser::after {
+    content: "";
+    position: absolute;
+    width: 64px;
+    height: 2px;
+    background-color: var(--color-secondary);
+    top: 50%;
+    right: -80px;
+    background: linear-gradient(to left, transparent, currentColor);
+    transform: translateY(-50%);
+}
+
+#contact {
+    background-color: #0E131F;
+    padding-block: 96px;
+}
+
+.title {
+    margin-bottom: 64px;
+}
+
+.title h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    color: #f1f1f1;
+}
+
+#contact .title p:nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #99a1af;
+}
+
+#contact .my-card div:nth-child(1) {
+    width: 64px;
+    height: 64px;
+    background-color: var(--color-secondary);
+}
+
+#contact .my-card {
+    padding: 32px;
+    background-color: #1E2938;
+    border-radius: 16px;
+}
+
+#contact .my-card:nth-child(2) {
+    margin-block: 32px;
+}
+
+#contact .my-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+#contact .my-card p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #99a1af;
+}
+
+#contact .my-colored-card {
+    padding: 32px;
+    background: linear-gradient(to right, var(--color-secondary), #4ade80);
+    border-radius: 16px;
+    margin-top: 32px;
+}
+
+#contact .my-colored-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #0b0e13;
+    margin-bottom: 16px;
+}
+
+#contact .my-colored-card p {
+    margin-bottom: 24px;
+}
+
+#contact .my-colored-card .brand {
+    width: 48px;
+    height: 48px;
+    background-color: #0b0e13;
+
+}
+
+#contact .my-colored-card .brand {
+    color: var(--color-secondary);
+}
+
+/* Footer */
+
+#footer {
+    color: var(--color-footer);
+    padding-top: 64px;
+    padding-bottom: calc(64px - 1rem);
+}
+
+.footer-foot {
+    border-top: solid 1px oklch(0.278 0.033 256.848);
+    padding-top: 32px;
+}
+
+#footer h4 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+
+.shine-button {
+    position: relative;
+    overflow: hidden;
+    padding: 12px 24px;
+    background: var(--color-secondary);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.shine-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 255, 255, 0.4),
+            transparent);
+    transform: skewX(-25deg);
+    transition: none;
+}
+
+.shine-button:hover::before {
+    left: 150%;
+    /* Sweep across the button to the right */
+    transition: 0.75s ease-in-out;
+}
+
+.btn-primary {
+    --bs-btn-color: #0B0E13;
+    --bs-btn-bg: var(--color-secondary);
+    --bs-btn-border-color: var(--color-secondary);
+    --bs-btn-hover-color: #0B0E13;
+    --bs-btn-hover-bg: var(--color-secondary);
+    --bs-btn-hover-border-color: var(--color-secondary);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #0B0E13;
+    --bs-btn-active-bg: var(--color-secondary);
+    --bs-btn-active-border-color: var(--color-sec4ondary);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #0B0E13;
+    --bs-btn-disabled-bg: var(--color-secondary);
+    --bs-btn-disabled-border-color: var(--color-secondary);
+}
